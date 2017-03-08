@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>List</title>
+    <script src="data-list.js"></script>
+    <script>
+    var list = new List();
+    list.append('1');
+    list.append('2');
+
+    console.log(list.length);
+    list.remove('1');
+    console.log(list.length);
+    console.log(list.hasPrev());
+    console.log(list.hasNext());
+
+    list.end();
+    console.log(list.currPos());
+
+    console.log(list.hasPrev());
+    console.log(list.hasNext());
+    list.end();
+    console.log(list.currPos());
+
+    console.log(list.hasPrev());
+    console.log(list.hasNext());
+    console.log(list.getElement());
+
+    var list2 = new List();
+    console.log(list2.length());
+    </script>
+</head>
+
+<body>
+</body>
+
+</html>

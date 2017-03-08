@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script>
+    // 原型对象中的函数不能访问构造函数中的私有变量
+    function Test() {
+        this.value = 1;
+    }
+    Test.prototype = {
+        useValue: function() {
+            return this.value++;
+        }
+    }
+
+    var test1 = new Test();
+    var test2 = new Test();
+    console.log(test1.useValue());
+    console.log(test2.useValue());
+    </script>
+</head>
+
+<body>
+</body>
+
+</html>
