@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script src="GradeCount.js"></script>
+	<script>
+		var bst = new GradeCount();
+		bst.insert(80);
+		bst.insert(70);
+		bst.insert(90);
+		bst.insert(100);
+		bst.insert(90);
+		bst.inOrder(bst.root);
+		console.log(bst.getMax());
+		console.log(bst.getMin());
+		// bst.preOrder(bst.root);
+		// bst.postOrder(bst.root);
+		// bst.getMin();
+		// bst.getMax();
+		// console.log(bst.find(1));
+		// console.log(bst.find(9));
+		// console.log(bst.find(2));
+	</script>
+</head>
+<body>
+	
+</body>
+</html>

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script src="linked-list.js"></script>
+	<script>
+		var linkedList = new LinkedList();
+
+		linkedList.append(new Node('first'));
+		linkedList.append(new Node('second'));
+		linkedList.append(new Node('third'));
+		var node = linkedList.find('second');
+		linkedList.insertAfter(new Node('insert after seconed'), node);
+		linkedList.display();
+	</script>
+</head>
+<body>
+	
+</body>
+</html>
