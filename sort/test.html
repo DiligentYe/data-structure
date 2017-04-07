@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script src="bubbleSort.js"></script>
+	<script src="selectionSort.js"></script>
+	<script src="insertSort.js"></script>
+	<script src="shellSort.js"></script>
+	<script src="quickSort.js"></script>
+	<script src="mergeSort.js"></script>
+	<script src="sort.js"></script>
+	<script>
+		var arr = [];
+		for (var i = 0; i < 100000; i++) {
+			arr[arr.length] = Math.ceil(Math.random() * 1000000);
+		}
+		// console.log('原始数组:' + arr);
+		var obj1 = sort(bubbleSort, arr);
+		// console.log('冒泡排序：' + obj1.handleArr);
+		console.log('冒泡算法时间：' + obj1.time);
+		var obj2 = sort(selectionSort, arr);
+		// console.log('选择排序：' + obj2.handleArr);
+		console.log('选择算法时间：' + obj2.time);
+		var obj3 = sort(insertSort, arr);
+		// console.log('插入排序：' + obj3.handleArr);
+		console.log('插入算法时间：' + obj3.time);
+		var obj4 = sort(shellSort, arr);
+		// console.log('希尔排序：' + obj4.handleArr);
+		console.log('希尔算法时间：' + obj4.time);
+		var obj5 = sort(quickSort, arr);
+		// console.log('快速排序：' + obj5.handleArr);
+		console.log('快速算法时间：' + obj5.time);
+		var obj6 = sort(mergeSort, arr);
+		// console.log('归并排序：' + obj6.handleArr);
+		console.log('归并算法时间：' + obj6.time);
+	</script>
+</head>
+<body>
+	
+</body>
+</html>
